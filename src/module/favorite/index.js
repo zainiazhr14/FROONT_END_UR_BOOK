@@ -28,7 +28,7 @@ const Favorite = () => {
   const handleDelete = async (bookId) => {
     await request.delete(`/favorite/${bookId}`).then(res => {
       message.success('Book Removed')
-      dispatch(handleFavorite(id))
+      dispatch(handleFavorite({ id, keyword: null }))
     })
   }
 
