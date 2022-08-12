@@ -42,7 +42,6 @@ const Visitor = () => {
 
   useEffect(() => {
     form.setFieldsValue(detail);
-    console.log(detail)
   }, [detail])
 
   useEffect(() => {
